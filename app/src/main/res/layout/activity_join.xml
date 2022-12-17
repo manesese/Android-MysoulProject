@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".View.View.JoinActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/mainColor"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="회원가입"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/login_layout">
+
+            <EditText
+                android:id="@+id/join_email_et"
+                style="@style/AuthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="이메일"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#8E8787" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999" />
+
+            <TextView
+                android:id="@+id/id_check_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#648CDD"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/join_pw_et"
+                style="@style/AuthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:textColorHint="#8E8787" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999" />
+
+            <TextView
+                android:id="@+id/pw_check_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#648CDD"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/join_pw_check_et"
+                style="@style/AuthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:textColorHint="#8E8787" />
+
+            <TextView
+                android:id="@+id/pw_check_correct_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#648CDD"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/background_radious_yellow"
+                android:text="회원가입"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="홈"
+        android:id="@+id/nav_home"
+        app:showAsAction="always"
+        android:icon="@drawable/bottom_hometap"/>
+    <item android:title="클래스"
+        android:id="@+id/nav_tip"
+        app:showAsAction="always"
+        android:icon="@drawable/bottom_goodtip"/>
+    <item android:title="회원"
+        android:id="@+id/nav_talk"
+        app:showAsAction="always"
+        android:icon="@drawable/bottom_talk"/>
+    <item android:title="설정"
+        android:id="@+id/nav_book_mark"
+        app:showAsAction="always"
+        android:icon="@drawable/bottom_bookmark"/>
+    <item android:title="설정"
+        android:id="@+id/nav_store"
+        app:showAsAction="always"
+        android:icon="@drawable/bottom_store"/>
+</menu>
