@@ -67,6 +67,7 @@ class JoinActivity : AppCompatActivity() {
             }
         }
         Log.e("asd", isEmailFormat(binding.joinEmailEt.text.toString()).toString())
+        Log.e("asd", isEmailFormat(binding.joinEmailEt.text.toString()).toString())
 
 
     }
