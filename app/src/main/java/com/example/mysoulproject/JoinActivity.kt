@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
 import android.view.View
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
@@ -64,6 +66,12 @@ class JoinActivity : AppCompatActivity() {
                 }
             }
         }
+
+
+    }
+
+    private fun onTextchanged() {
+        EditText.
     }
     //pwcheckTv 백그라운드 설정
     private fun onChangepwCheck(pwCheckVisible: Int, pwCheckSetText: String, pwCheckSetTC: String) {
