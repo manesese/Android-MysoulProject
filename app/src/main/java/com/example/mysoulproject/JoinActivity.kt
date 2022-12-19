@@ -66,13 +66,11 @@ class JoinActivity : AppCompatActivity() {
                 }
             }
         }
+        Log.e("asd", isEmailFormat(binding.joinEmailEt.text.toString()).toString())
 
 
     }
 
-    private fun onTextchanged() {
-        EditText.
-    }
     //pwcheckTv 백그라운드 설정
     private fun onChangepwCheck(pwCheckVisible: Int, pwCheckSetText: String, pwCheckSetTC: String) {
         binding.apply {
